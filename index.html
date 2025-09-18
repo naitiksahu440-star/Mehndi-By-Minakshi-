@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mehndi by Minakshi</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fffdf8;
+      color: #333;
+    }
+    header {
+      background: #5a3825;
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      font-family: cursive;
+      font-size: 28px;
+      margin: 0;
+      color: #f9e4c8;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #f9c784;
+    }
+    .hero {
+      background: url("https://via.placeholder.com/1200x400?text=Mehndi+Art+Frames") no-repeat center/cover;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 36px;
+      font-weight: bold;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+    }
+    .section {
+      padding: 40px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    .section h2 {
+      text-align: center;
+      font-size: 28px;
+      color: #5a3825;
+      margin-bottom: 20px;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.2s;
+    }
+    .card:hover { transform: translateY(-5px); }
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .card-body {
+      padding: 15px;
+    }
+    .card-body h3 {
+      margin: 0 0 10px;
+      color: #5a3825;
+    }
+    .price {
+      color: #2c7a2c;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .buy-btn {
+      display: inline-block;
+      padding: 10px 15px;
+      border-radius: 6px;
+      background: #5a3825;
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+      transition: 0.2s;
+    }
+    .buy-btn:hover {
+      background: #8b5d3b;
+    }
+    .contact {
+      text-align: center;
+      padding: 30px;
+      background: #f9e4c8;
+      border-radius: 12px;
+      margin-top: 40px;
+    }
+    footer {
+      background: #5a3825;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Mehndi by Minakshi</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#work">Work Place</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <div class="hero" id="home">
+    Beautiful Mehndi Art Frames
+  </div>
+
+  <!-- Products Section -->
+  <div class="section" id="shop">
+    <h2>Our Mehndi Art Frames</h2>
+    <div class="products">
+
+      <div class="card">
+        <img src="https://via.placeholder.com/400x300?text=Frame+1" alt="Frame 1">
+        <div class="card-body">
+          <h3>Mehndi Frame 1</h3>
+          <p class="price">₹500</p>
+          <a href="tel:7000351379" class="buy-btn">Order Now</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://via.placeholder.com/400x300?text=Frame+2" alt="Frame 2">
+        <div class="card-body">
+          <h3>Mehndi Frame 2</h3>
+          <p class="price">₹2500</p>
+          <a href="tel:7000351379" class="buy-btn">Order Now</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://via.placeholder.com/400x300?text=Frame+3" alt="Frame 3">
+        <div class="card-body">
+          <h3>Mehndi Frame 3</h3>
+          <p class="price">₹5000</p>
+          <a href="tel:7000351379" class="buy-btn">Order Now</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Work Place -->
+  <div class="section" id="work">
+    <h2>Work Place</h2>
+    <p style="text-align:center;">We design unique Mehndi Art Frames with love ❤️ for your home & workplace décor.</p>
+  </div>
+
+  <!-- Contact -->
+  <div class="section" id="contact">
+    <div class="contact">
+      <h2>Contact Us</h2>
+      <p>📞 Phone/WhatsApp: <strong>7000351379</strong></p>
+      <p>💳 Payment: Cash on Delivery & Online (PhonePe)</p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 Mehndi by Minakshi | All Rights Reserved
+  </footer>
+
+</body>
+</html>
